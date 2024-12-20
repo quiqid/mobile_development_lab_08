@@ -35,20 +35,6 @@ class TaskFormFragment : Fragment(R.layout.fragment_task_form) {
         // Получаем ссылку на MenuHost для добавления меню во фрагменте
         val menuHost: MenuHost = requireActivity()
 
-        // Добавляем MenuProvider для управления меню в этом фрагменте
-//        menuHost.addMenuProvider(object : MenuProvider {
-//            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
-//                menuInflater.inflate(R.menu.menu_main, menu) // Инфляция меню из ресурса
-//            }
-//
-//            override fun onMenuItemSelected(item: MenuItem): Boolean {
-//                return when (item.itemId) {
-//                    R.id.action_settings -> true
-//                    else -> false
-//                }
-//            }
-//        }, viewLifecycleOwner)
-
         val buttonAddTask: Button = view.findViewById(R.id.buttonAddTask)
         val editTextTaskContent: EditText = view.findViewById(R.id.editTextTaskContent)
         val radioGroupPriority: RadioGroup = view.findViewById(R.id.radioGroupPriority)
